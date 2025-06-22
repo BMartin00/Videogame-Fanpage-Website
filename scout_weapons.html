@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Battlefield 1 Scout Weapons</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+</head>
+<body class="w3-black w3-text-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-dark-grey" style="z-index:3;width:250px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <h4><b>Battlefield 1 FanPage</b></h4>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-home fa-fw w3-margin-right"></i>Home</a> 
+    <h4 class="w3-bar-item w3-padding w3-text-blue">Singleplayer</h4>
+    <a href="campaigns.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>Campaigns</a> 
+    <!--<a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>-->
+    <h4 class="w3-bar-item w3-padding w3-text-blue">Multiplayer</h4>
+    <div class="w3-dropdown-hover">
+      <button class="w3-bar-item w3-button w3-padding"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Classes</button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="infantry_based_classes.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-user fa-fw w3-margin-right"></i>Infantry-based</a>
+          <a href="vehicle_based_classes.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-ship fa-fw w3-margin-right"></i>Vehicle-based</a>
+          <a href="elite_classes.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-empire fa-fw w3-margin-right"></i>Elite-classes</a>
+        </div>
+    </div>
+    <a href="maps.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-map fa-fw w3-margin-right"></i>Maps</a>
+    <a href="multiplayer_modes.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-group fa-fw w3-margin-right"></i>Multiplayer modes</a>
+    <!-- <a href="weapons.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-wrench fa-fw w3-margin-right"></i>Weapons</a> -->
+    <div class="w3-dropdown-hover">
+        <button class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Weapons</button>
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="assault_weapons.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-arrow-right fa-fw w3-margin-right"></i>Assault Weapons</a>
+            <a href="medic_weapons.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-arrow-right fa-fw w3-margin-right"></i>Medic Weapons</a>
+            <a href="support_weapons.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-arrow-right fa-fw w3-margin-right"></i>Support Weapons</a>
+            <a href="scout_weapons.html" onclick="w3_close()" class="w3-bar-item w3-button w3-text-teal"><i class="fa fa-arrow-right fa-fw w3-margin-right"></i>Scout Weapons</a>
+          </div>
+    </div>
+    <a href="vehicles.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-truck fa-fw w3-margin-right"></i>Vehicles</a>
+    <a href="dlcs.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-puzzle-piece fa-fw w3-margin-right"></i>DLCs</a>
+    <hr>
+    <a href="report.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-flag fa-fw w3-margin-right"></i>REPORT</a>
+  </div>
+  <div class="w3-panel w3-large w3-center">
+    <a href="https://www.facebook.com/battlefield" onclick="w3_close()" class="w3-bar-item"><i class="fa fa-facebook-official fa-fw w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/battlefield/" onclick="w3_close()" class="w3-bar-item"><i class="fa fa-instagram fa-fw w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/Battlefield" onclick="w3_close()" class="w3-bar-item"><i class="fa fa-twitter fa-fw w3-hover-opacity"></i></a>
+    <a href="https://www.youtube.com/Battlefield" onclick="w3_close()" class="w3-bar-item"><i class="fa fa-youtube fa-fw w3-hover-opacity"></i></a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+    <!-- Header -->
+    <header id="battlefield">
+        <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+        <div class="w3-container">
+        </div>
+    </header>
+  
+    <!-- Battlefield 1 Scout Weapons -->
+    <div class="w3-display-container">
+        <img src="images/page_images/battlefield1_weapons.jpg" style="height: 100%; width:100%;">
+        <div class="w3-display-middle w3-xxxlarge w3-text-white">Scout Weapons</div>
+    </div>
+    <hr>
+
+    <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+    <!-- Primary Weapons -->
+    <h2>Scout</h2>
+    <h5>Primary Weapons</h5>
+        <div class="w3-row">
+            <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/weapons_scout/primary_weapons/SMLE_MKIII_Infantry.webp" style="width: 100%; height: 100px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>SMLE MKIII Infantry</b></h5>
+                </div>
+            </div>
+            <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/weapons_scout/primary_weapons/SMLE_MKIII_Marksman.webp" style="width: 100%; height: 100px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>SMLE MKIII Marksman</b></h5>
+                </div>
+            </div>
+            <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/weapons_scout/primary_weapons/SMLE_MKIII_Carbine.webp" style="width: 100%; height: 100px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>SMLE MKIII Carbine</b></h5>
+                </div>
+            </div>
+            <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/weapons_scout/primary_weapons/SMLE_MKIII_Lawrence_of_Arabia.webp" style="width: 100%; height: 100px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>SMLE MKIII Lawrence of Arabia</b></h5>
+                </div>
+            </div>
+            <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/weapons_scout/primary_weapons/Gewehr_98_Infantry.webp" style="width: 100%; height: 100px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Gewehr 98 Infantry</b></h5>
+                </div>
+            </div>
+            <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/weapons_scout/primary_weapons/Gewehr_98_Marksman.webp" style="width: 100%; height: 100px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Gewehr 98 Marksman</b></h5>
+                </div>
+            </div>
+            <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/weapons_scout/primary_weapons/Gewehr_98_Sniper.webp" style="width: 100%; height: 100px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Gewehr 98 Sniper</b></h5>
+                </div>
+            </div>
+            <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/weapons_scout/primary_weapons/Russian_1895_Infantry.webp" style="width: 100%; height: 100px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Russian 1895 Infantry</b></h5>
+                </div>
+            </div>
+            <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/weapons_scout/primary_weapons/Russian_1895_Sniper.webp" style="width: 100%; height: 100px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Russian 1895 Sniper</b></h5>
+                </div>
+            </div>
+            <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/weapons_scout/primary_weapons/Russian_1895_Trench.webp" style="width: 100%; height: 100px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Russian 1895 Trench</b></h5>
+                </div>
+            </div>
+            <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/weapons_scout/primary_weapons/gewehr_m95_infantry.webp" style="width: 100%; height: 100px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Gewehr M.95 Infantry</b></h5>
+                </div>
+            </div>
+            <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/weapons_scout/primary_weapons/gewehr_m95_marksman.webp" style="width: 100%; height: 100px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Gewehr M.95 Marksman</b></h5>
+                </div>
+            </div>
+            <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/weapons_scout/primary_weapons/gewehr_m95_carbine.webp" style="width: 100%; height: 100px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Gewehr M.95 Carbine</b></h5>
+                </div>
+            </div>
+            <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/weapons_scout/primary_weapons/M1903_Marksman.webp" style="width: 100%; height: 100px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>M1903 Marksman</b></h5>
+                </div>
+            </div>
+            <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/weapons_scout/primary_weapons/M1903_Sniper.webp" style="width: 100%; height: 100px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>M1903 Sniper</b></h5>
+                </div>
+            </div>
+            <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/weapons_scout/primary_weapons/M1903_Experimental.webp" style="width: 100%; height: 100px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>M1903 Experimental</b></h5>
+                </div>
+            </div>
+            <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/weapons_scout/primary_weapons/M1903_Infantry.webp" style="width: 100%; height: 100px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>M1903 Infantry</b></h5>
+                </div>
+            </div>
+            <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/weapons_scout/primary_weapons/Martini-Henry_Infantry.webp" style="width: 100%; height: 100px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Martini-Henry Infantry</b></h5>
+                </div>
+            </div>
+            <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/weapons_scout/primary_weapons/Lebel_Model_1886.webp" style="width: 100%; height: 100px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Lebel Model 1886</b></h5>
+                </div>
+            </div>
+            <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/weapons_scout/primary_weapons/Mosin_Nagant_M91.webp" style="width: 100%; height: 100px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Mosin Nagant M91</b></h5>
+                </div>
+            </div>
+            <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/weapons_scout/primary_weapons/Vetterli_Vitali_M1870-87.webp" style="width: 100%; height: 100px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Vetterli-Vitali M1870/87</b></h5>
+                </div>
+            </div>
+            <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/weapons_scout/primary_weapons/Carcano_M91.webp" style="width: 100%; height: 100px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Carcano M91 Carbine</b></h5>
+                </div>
+            </div>
+            <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/weapons_scout/primary_weapons/Type_38_Arisaka.webp" style="width: 100%; height: 100px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Type 38 Arisaka</b></h5>
+                </div>
+            </div>
+            <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/weapons_scout/primary_weapons/Ross_MkIII.webp" style="width: 100%; height: 100px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Ross MkIII</b></h5>
+                </div>
+            </div>
+            <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/weapons_scout/primary_weapons/M1917_Enfield.webp" style="width: 100%; height: 100px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>M1917 Enfield</b></h5>
+                </div>
+            </div>
+        </div><hr>
+    <!-- Secondary Weapons -->
+    <h5>Secondary Weapons</h5>
+        <div class="w3-row">
+            <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/weapons_scout/secondary_weapons/Bodeo_1889.webp" style="width: 100%; height: 100px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Bodeo 1889</b></h5>
+                </div>
+            </div>
+            <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/weapons_scout/secondary_weapons/Frommer_Stop.webp" style="width: 100%; height: 100px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Frommer Stop</b></h5>
+                </div>
+            </div>
+            <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/weapons_scout/secondary_weapons/Mars_Automatic.webp" style="width: 100%; height: 100px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Mars Automatic</b></h5>
+                </div>
+            </div>
+            <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/weapons_scout/secondary_weapons//M1911.webp" style="width: 100%; height: 100px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>M1911</b></h5>
+                </div>
+            </div>
+            <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/weapons_scout/secondary_weapons/Hellfighter_M1911.webp" style="width: 100%; height: 100px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>M1911 Hellfighter</b></h5>
+                </div>
+            </div>
+            <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/weapons_scout/secondary_weapons/P08_Pistol.webp" style="width: 100%; height: 100px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>P08 Pistol</b></h5>
+                </div>
+            </div>
+            <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/weapons_scout/secondary_weapons/P08_Red_Baron.webp" style="width: 100%; height: 100px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>P08 Red Baron</b></h5>
+                </div>
+            </div>
+            <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/weapons_scout/secondary_weapons/Mle_1903.webp" style="width: 100%; height: 100px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Mle 1903</b></h5>
+                </div>
+            </div>
+            <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/weapons_scout/secondary_weapons/No._3_Revolver.webp" style="width: 100%; height: 100px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>No. 3 Revolver</b></h5>
+                </div>
+            </div>
+            <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/weapons_scout/secondary_weapons/C93.webp" style="width: 100%; height: 100px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>C93</b></h5>
+                </div>
+            </div>
+            <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/weapons_scout/secondary_weapons/Kolibri.webp" style="width: 100%; height: 100px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Kolibri</b></h5>
+                </div>
+            </div>
+            <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/weapons_scout/secondary_weapons/Nagant_revolver.webp" style="width: 100%; height: 100px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Nagant Revolver</b></h5>
+                </div>
+            </div>
+            <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/weapons_scout/secondary_weapons/Obrez_pistol.webp" style="width: 100%; height: 100px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Obrez pistol</b></h5>
+                </div>
+            </div>
+            <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/weapons_scout/secondary_weapons/Revolver_Mk_VI.webp" style="width: 100%; height: 100px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Revolver Mk VI</b></h5>
+                </div>
+            </div>
+        </div><hr>
+    <!-- Gadgets -->
+    <h5>Gadgets</h5>
+        <div class="w3-row">
+            <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/weapons_scout/gadgets/K_Bullets.webp" style="width: 100%; height: 100px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>K Bullets</b></h5>
+                </div>
+            </div>
+            <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/weapons_scout/gadgets/Trench_Periscope.webp" style="width: 100%; height: 100px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Trench Periscope</b></h5>
+                </div>
+            </div>
+            <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/weapons_scout/gadgets/Flare_Gun_Spot.webp" style="width: 100%; height: 100px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Flare Gun Spot</b></h5>
+                </div>
+            </div>
+            <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/weapons_scout/gadgets/Flare_Gun_Flash.webp" style="width: 100%; height: 100px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Flare Gun Flash</b></h5>
+                </div>
+            </div>
+            <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/weapons_scout/gadgets/Sniper_Decoy.webp" style="width: 100%; height: 100px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Sniper Decoy</b></h5>
+                </div>
+            </div>
+            <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/weapons_scout/gadgets/Sniper_Shield.webp" style="width: 100%; height: 100px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Sniper Shield</b></h5>
+                </div>
+            </div>
+            <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/weapons_scout/gadgets/Tripwire_Bomb_HE.webp" style="width: 100%; height: 100px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>High Explosive (HE) Tripwire Bomb</b></h5>
+                </div>
+            </div>
+            <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/weapons_scout/gadgets/Tripwire_Bomb_GAS.webp" style="width: 100%; height: 100px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Gas Tripwire Bomb</b></h5>
+                </div>
+            </div>
+            <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/weapons_scout/gadgets/Tripwire_Bomb_INC.webp" style="width: 100%; height: 100px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Incendiary Tripwire Bomb</b></h5>
+                </div>
+            </div>
+        </div><hr>
+    <!-- Grenades -->
+    <h5>Grenades</h5>
+    <div class="w3-row">
+        <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+            <img src="images/weapons_scout/grenades/frag_grenade.webp" style="width: 100%; height: 100px;">
+            <div class="w3-container w3-center w3-grey">
+                <h5><b>Frag Grenade</b></h5>
+            </div>
+        </div>
+        <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+            <img src="images/weapons_scout/grenades/Gas_Grenade.webp" style="width: 100%; height: 100px;">
+            <div class="w3-container w3-center w3-grey">
+                <h5><b>Gas Grenade</b></h5>
+            </div>
+        </div>
+        <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+            <img src="images/weapons_scout/grenades/Impact_Grenade.webp" style="width: 100%; height: 100px;">
+            <div class="w3-container w3-center w3-grey">
+                <h5><b>Impact Grenade</b></h5>
+            </div>
+        </div>
+        <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+            <img src="images/weapons_scout/grenades/Incendiary_Grenade.webp" style="width: 100%; height: 100px;">
+            <div class="w3-container w3-center w3-grey">
+                <h5><b>Incendiary Grenade</b></h5>
+            </div>
+        </div>
+        <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+            <img src="images/weapons_scout/grenades/Light_Anti-Tank_Grenade.webp" style="width: 100%; height: 100px;">
+            <div class="w3-container w3-center w3-grey">
+                <h5><b>Light Anti-Tank Grenade</b></h5>
+            </div>
+        </div>
+        <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+            <img src="images/weapons_scout/grenades/Mini_Grenade.webp" style="width: 100%; height: 100px;">
+            <div class="w3-container w3-center w3-grey">
+                <h5><b>Mini Grenade</b></h5>
+            </div>
+        </div>
+        <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+            <img src="images/weapons_scout/grenades/Smoke_Grenade.webp" style="width: 100%; height: 100px;">
+            <div class="w3-container w3-center w3-grey">
+                <h5><b>Smoke Grenade</b></h5>
+            </div>
+        </div>
+        <div class="w3-third w3-card-4 w3-padding w3-dark-grey">
+            <img src="images/weapons_scout/grenades/Improvised_Grenade.webp" style="width: 100%; height: 100px;">
+            <div class="w3-container w3-center w3-grey">
+                <h5><b>Improvised Grenade</b></h5>
+            </div>
+        </div>
+    </div>
+    </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-dark-grey">
+  <div class="w3-row-padding">
+    <h3 class="w3-center">BATTLEFIELD 1</h3>
+    <p class="w3-center">Battlefield 1 FanPage is a website created by a Battlefield 1 fan for other Battlefield 1 fans.</p>
+    <p class="w3-center">Battlefield 1 fans can find various informations about the game, singleplayer, multiplayer modes, </p>
+    <p class="w3-center">maps, classes and weapons on this website.</p>
+  </div>
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24">Battlefield 1</div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>

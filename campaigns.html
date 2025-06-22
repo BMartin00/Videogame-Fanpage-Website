@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Battlefield 1 Campaigns</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+</head>
+<body class="w3-black w3-text-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-dark-grey" style="z-index:3;width:250px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <h4><b>Battlefield 1 FanPage</b></h4>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-home fa-fw w3-margin-right"></i>Home</a> 
+    <h4 class="w3-bar-item w3-padding w3-text-blue">Singleplayer</h4>
+    <a href="campaigns.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-user fa-fw w3-margin-right"></i>Campaigns</a> 
+    <!--<a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>-->
+    <h4 class="w3-bar-item w3-padding w3-text-blue">Multiplayer</h4>
+    <div class="w3-dropdown-hover">
+      <button class="w3-bar-item w3-button w3-padding"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Classes</button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="infantry_based_classes.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-user fa-fw w3-margin-right"></i>Infantry-based</a>
+          <a href="vehicle_based_classes.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-ship fa-fw w3-margin-right"></i>Vehicle-based</a>
+          <a href="elite_classes.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-empire fa-fw w3-margin-right"></i>Elite-classes</a>
+        </div>
+    </div>
+    <a href="maps.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-map fa-fw w3-margin-right"></i>Maps</a>
+    <a href="multiplayer_modes.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-group fa-fw w3-margin-right"></i>Multiplayer modes</a>
+    <div class="w3-dropdown-hover">
+      <button class="w3-bar-item w3-button w3-padding"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Weapons</button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="assault_weapons.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-arrow-right fa-fw w3-margin-right"></i>Assault Weapons</a>
+          <a href="medic_weapons.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-arrow-right fa-fw w3-margin-right"></i>Medic Weapons</a>
+          <a href="support_weapons.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-arrow-right fa-fw w3-margin-right"></i>Support Weapons</a>
+          <a href="scout_weapons.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-arrow-right fa-fw w3-margin-right"></i>Scout Weapons</a>
+        </div>
+    </div>
+    <a href="vehicles.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-truck fa-fw w3-margin-right"></i>Vehicles</a>
+    <a href="dlcs.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-puzzle-piece fa-fw w3-margin-right"></i>DLCs</a>
+    <hr>
+    <a href="report.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-flag fa-fw w3-margin-right"></i>REPORT</a>
+  </div>
+  <div class="w3-panel w3-large w3-center">
+    <a href="https://www.facebook.com/battlefield" onclick="w3_close()" class="w3-bar-item"><i class="fa fa-facebook-official fa-fw w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/battlefield/" onclick="w3_close()" class="w3-bar-item"><i class="fa fa-instagram fa-fw w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/Battlefield" onclick="w3_close()" class="w3-bar-item"><i class="fa fa-twitter fa-fw w3-hover-opacity"></i></a>
+    <a href="https://www.youtube.com/Battlefield" onclick="w3_close()" class="w3-bar-item"><i class="fa fa-youtube fa-fw w3-hover-opacity"></i></a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Header -->
+  <header id="battlefield">
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    </div>
+  </header>
+  
+  <!-- Battlefield 1 Introduction -->
+  <div class="w3-display-container">
+    <img src="images/page_images/battlefield1_campaigns.jpg" style="height: 100%; width:100%;">
+    <div class="w3-display-middle w3-xxxlarge w3-text-white">Campaigns</div>
+  </div>
+
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+    <h4><b><u>Characters</u></b></h4>
+    <p>
+        During the single-player campaigns, the player controls six different characters from a first-person perspective 
+        over six different chapters (known as War Stories). Unlike previous campaigns in the series, 
+        Battlefield 1's single-player story mode is composed of six separate "War Stories", 
+        each shown through the eyes of separate Allied soldiers from different nationalities:
+    </p>
+    <ul>
+        <li><a href="#StormOfSteel">"Storm of Steel"</a> – the prologue of the game, set in France 
+            through the eyes of several Harlem Hellfighters
+        </li>
+        <li><a href="#ThroughMudAndBlood">"Through Mud and Blood"</a> – set in France through the 
+            eyes of a British tank driver
+        </li>
+        <li><a href="#FriendsInHighPlaces">"Friends in High Places"</a> – set in France and the UK and seen 
+            through the eyes of a Royal Flying Corps fighter pilot
+        </li>
+        <li><a href="#AvantiSavoia">"Avanti Savoia"</a> – set in Italy and seen through the eyes of 
+            a mournful survivor and member of the Arditi   
+        </li>
+        <li><a href="#TheRunner">"The Runner"</a> – taking place on the Gallipoli Peninsula 
+            (part of the Ottoman Empire) through the eyes of an ANZAC runner
+        </li>
+        <li><a href="#NothingIsWritten">"Nothing is Written"</a> – set in the Kingdom of Hejaz through the 
+            eyes of a Bedouin warrior under the command of Lawrence of Arabia
+        </li>
+    </ul>
+    <hr>
+
+    <h4><b><u>Plots</u></b></h4>
+    <h5 id="StormOfSteel"><b><i>Storm of Steel</i></b></h5>
+    <p>The prologue, set in 1918, sees players take control of different members of the Harlem Hellfighters 
+      s they defend their positions against a German offensive in France during the Meuse–Argonne offensive. 
+      The player initially starts out near the front line and must survive as long as possible against 
+      waves of German soldiers. If the player survives the attack, an artillery barrage will rain down on 
+      them and then the game's perspective will shift to another soldier. During the course of the gameplay, 
+      an unnamed narrator (one of the Hellfighters) gives commentary on the nature of the war as the battle continues 
+      and player-controlled soldiers are killed.
+    </p>
+    <p>At the start of the battle, the Hellfighters initially lose ground to the Germans, but British tanks 
+      force the German troops into a retreat until the tanks are stalled by artillery during Hundred Days Offensive. 
+      The Hellfighters mount a counteroffensive and push forward, sustaining casualties as the Germans hold their ground. 
+      When the player switches perspective to the final soldier in the gameplay, a German soldier attempts to kill 
+      the player character with a shovel but is stopped short by an artillery barrage that wipes out all of the 
+      combatants on the battlefield and renders the player unconscious. When the player character regains 
+      consciousness, he initially appears to be the lone survivor but quickly encounters a German survivor. 
+      Although the two-point their weapons at one another, exhaustion and battle fatigue set in as both realize the 
+      futility of their situation, inclining both men to lower their weapons. The game then proceeds to an introduction 
+      cinematic that opens up to the other War Stories.
+    </p>
+
+    <h5 id="ThroughMudAndBlood"><b><i>Through Mud and Blood</i></b></h5>
+    <p>Set in the Autumn of 1918 during the Battle of Cambrai in the Hundred Days Offensive, players assume 
+      the role of Daniel Edwards, a former chauffeur who enlists in the war as a British tank driver. 
+      Edwards is assigned to a Mark V tank dubbed "Black Bess," and meets the rest of his crew: Townsend, 
+      the tank crew's commander; McManus, a cynical gunner who doubts Edwards' abilities and the likelihood of 
+      the crew's success; Pritchard, another gunner; and Finch, the friendly mechanic.
+    </p>
+    <p>The crew must penetrate German lines to reach the French town of Cambrai and help capture strategic positions 
+      and destroy artillery batteries. Finch is killed by machine-gun fire early on while trying to repair the tank, 
+      and later on, the tank becomes trapped in mud and surrounded by German infantry. Townsend decides to summon an 
+      artillery strike on their own position with the tank's messenger pigeon to save the tank, which McManus objects 
+      to vehemently. Pritchard is shot and killed trying to release the pigeon, forcing Edwards to do so, which 
+      enables British artillery to save the tank. Encountering thick fog in the nearby Bourlon Wood, Edwards acts as 
+      a forward scout to guide the tank. Clearing the forest, the tank becomes beset with mechanical problems, and 
+      Townsend sends Edwards and McManus to salvage spark plugs from British tanks captured by the Germans. McManus 
+      expresses his disdain for their orders and abandons the mission, deserting. However, McManus has a change of 
+      heart later on and returns just in time to save Edwards from a German soldier.
+    </p>
+    <p>
+      With the tank repaired, the crew proceeds to a railway station defended by German forces. Although Bess is 
+      the only British tank in the area, the crew attacks the railway station to deceive the Germans into 
+      thinking that a large British offensive is underway. Eliminating the German forces at the railway station, 
+      the tank proceeds to Cambrai but is immobilized by artillery and attacked by German soldiers. Edwards and McManus 
+      are wounded defending the tank, and an injured Townsend sacrifices himself by igniting a gas leak inside the 
+      tank, killing himself and the Germans. With Bess destroyed and Edwards and McManus the only survivors, the two 
+      proceed alone on foot to Cambrai. Closing subtitles indicate that with the participation of more than 300 tanks at 
+      the Battle of Cambrai, the war ended a month later.</p>
+    </p>
+
+    <h5 id="FriendsInHighPlaces"><b><i>Friends in High Places</i></b></h5>
+    <p>In this story, set in the Spring of 1917 during the Battle of Arras players control Clyde Blackburn, an 
+      American pilot and gambler with a habit of deceitful behavior. Early on, Blackburn cheats George Rackham, a 
+      pilot of British nobility, in a game of cards and steals the latter's plane. Posing as Rackham, Blackburn 
+      introduces himself to Rackham's gunner, Wilson, and the two set off on an aerial exercise. During the exercise, 
+      German aircraft ambush the duo, and the two pilots take photographs of a German munitions base they stumble 
+      upon after fighting off the enemy fighters. Although Wilson is reluctant to show the photos to British Command 
+      out of fears of being accused of insubordination, Blackburn cajoles him into doing so with the prospect of winning 
+      medals. Wilson agrees on the condition that Blackburn returns them both safe from future missions.
+    </p>
+    <p>Blackburn and Wilson escort British bombers in an assault on the photographed German munitions base. Although the 
+      base is destroyed, Blackburn and Wilson are caught in a bomb explosion and crash behind enemy lines, separated. 
+      Blackburn sneaks through German positions and discovers Wilson is injured. Knowing that he will be unable to 
+      return to British lines safely while carrying Wilson, Blackburn contemplates putting his companion out of his misery 
+      but changes his mind when Wilson reveals he knew Blackburn's true identity all along. Blackburn carries Wilson 
+      through no-man's land to friendly lines but is detained by British Provosts under the orders of Rackham.
+    </p>
+    <p>On the way to the court-martial in London, the vessel carrying Blackburn, Rackham, and Wilson is attacked by a 
+      German aerial raid, and Rackham is killed. Blackburn and Wilson commandeer a plane and fight off the German raid. 
+      Blackburn and Wilson first destroy a wave of German bombers and fighters before crashing into a German Zeppelin and 
+      using its anti-aircraft gun to destroy another Zeppelin. The two pilots jump into the River Thames after the Zeppelin 
+      plummets to the ground. The story ends with Blackburn climbing out of the river unharmed, reflecting on his experiences. 
+      He notes that mixed accounts of his exploits may arise due to the confusing nature of the war, but suggests that 
+      his version of events is the truth. The story ends on an ambiguous note by leaving the question open as to whether 
+      the events of the story truly occurred as they did.
+    </p>
+
+    <h5 id="AvantiSavoia"><b><i>Avanti Savoia!</i></b></h5>
+    <p>Taking place during the autumn of 1918 in the Dolomites in Northern Italy during the Italian front, players assume 
+      the role of Luca Vincenzo Cocchiola, a member of the Arditi unit. The story is conveyed by an aged Luca years after 
+      the war as he recounts his memories to his American daughter on his birthday. He and his twin brother, Matteo, take 
+      part in a major offensive to seize an Austro-Hungarian fortress, days after their 21st birthday. While Matteo 
+      takes part in the main thrust of the offensive, Luca's unit plays an auxiliary role, eliminating barriers to 
+      the main advance forces. Donning heavy body armor and using a MG08/15 Luca spearheads the assault on key Austro-Hungarian 
+      positions, capturing strongpoints, destroying an artillery gun, and thwarting an enemy aerial assault.
+    </p>
+    <p>In desperation to stop the assault on the fort, the Austro-Hungarian bombers trigger a landslide to obstruct the 
+      Italian offensive. Desperate to save his brother, Luca sets off alone into the battlefield to find his brother's unit, 
+      armed with Villar Perosa and Beretta M1915. Along the way, he assists trapped Italian units and pushes toward the 
+      direction of the enemy fort. After clearing the fortress, Luca finds the remains of his brother's unit and stumbles 
+      upon his deceased brother; much to his grief and dismay. A mourning Luca in the present-day bids his brother farewell 
+      and happy birthday, while a concluding subtitle states that the war affected both nation-states and empires, as well 
+      as families, with survivors and the deceased of the war named the "Lost Generation."
+    </p>
+
+    <h5 id="TheRunner"><b><i>The Runner</i></b></h5>
+    <p>Set during the Gallipoli Campaign of 1915, the player takes on the role of Australian messenger and Second Boer War 
+      veteran, Frederick Bishop. The story starts with Bishop encountering young Jack Foster, who says he is Bishop's 
+      new charge. While initially cynical, Bishop reluctantly relents and takes Foster under his wing, but warns Foster 
+      to refrain from battle due to his inexperience and young age. Bishop storms the beaches of Gallipoli at Cape Helles 
+      and captures a strategic enemy position. Bishop fires a flare to signify the capture of the position but is startled 
+      by a lone Foster, who disobeyed Bishop's command to only move up with the rest of the Allied forces. Bishop berates 
+      Foster for his naivety and view of war as a glorious activity, given that Foster had lied about his age to enlist. 
+      Foster becomes appalled at the sight of the carnage around him, but Bishop softens his rhetoric and reassures 
+      Foster that they will be alright.
+    </p>
+    <p>The next day, Bishop volunteers as a runner in place of Foster, whom Bishop considers inexperienced for the task. 
+      Bishop returns to HQ to deliver a message and is saved by Foster, who shoots a nearby Ottoman soldier. British 
+      officer Whitehall dispatches Bishop to a rear command post to inform them that the British intend to advance further. 
+      Bishop finds the rear CP deserted, and discovers that the British intend to retreat and cover the withdrawal with 
+      artillery fire. Remembering that Foster is still on the frontlines, Bishop rushes back to retrieve him. Finding 
+      Whitehall, Bishop is shocked to discover that Foster has joined an assault on an Ottoman fortress. Bishop decides 
+      to pursue Foster, while a distressed Whitehall permits Bishop to disobey the fallback order to get Foster, telling 
+      him he has not much time.
+    </p>
+    <p>Bishop finds Foster and informs him of the imminent artillery strike, but the young Australian says that they cannot 
+      abandon their wounded. Bishop attacks the fort to cover the withdrawal, but tells Foster to fire a flare when the 
+      retreat is completed so that the former can make his own escape. Bishop then single-handedly captures the fort and 
+      is mortally wounded in the process, but sees Foster's flare and is relieved to see that the retreat was successful. 
+      The story ends as Bishop dies from his wounds, watching as British warships shell the fort. Closing subtitles state 
+      that the Ottomans eventually won the Battle at Gallipoli, and several notable survivors went on to lead a postwar Turkey. 
+      Australian and New Zealand troops fought at Gallipoli under their own flags, distinguishing themselves in combat after
+      marking the Anzac Day.
+    </p>
+
+    <h5 id="NothingIsWritten"><b><i>Nothing is Written</i></b></h5>
+    <p>Taking place in the spring of 1918, players assume control of Zara Ghufran, a Bedouin rebel working directly 
+      alongside British intelligence officer T. E. Lawrence (better known as Lawrence of Arabia) as they fight to undermine 
+      the Ottoman occupation of the Arabian Peninsula. Zara infiltrates a derailed Ottoman train in "Al-Ajdar" and retrieves 
+      a manual with Ottoman communication codes. Although caught in a trap by Tilkici, an Ottoman officer, Zara is rescued 
+      by Lawrence and several Bedouin insurgents. Zara and Lawrence decide to interrogate Tilkici on how to use the code 
+      manually to lure the Canavar, an Ottoman armored train, into a trap, but Tilkici scoffs that the rebels will not triumph.
+    </p>
+    <p>Having interrogated Tilkici, the rebels discover that they must use message capsules held by three Ottoman officers to 
+      ask the train to stand down. Zara proceeds alone, successfully infiltrating Ottoman camps to release two message capsules 
+      by a pigeon while eliminating the Ottoman commanders. However, as she prepares to release the third capsule, she is knocked 
+      unconscious by Tilkici, who managed to escape from Lawrence. Tilkici drags Zara out into the desert and taunts her, having 
+      already ordered the Canavar to strike Lawrence's camp. However, Zara kills Tilkici before he can execute her.
+    </p>
+    <p>Returning to Lawrence, who survived the attack by relocating following Tilkici's escape, Zara and Lawrence decide 
+      to attack the armored train while it stops for supplies. Zara infiltrates the village where the Canavar stops and 
+      destroys segments of the train to impede the train's movement. Zara and the rebels destroy the train in an intense 
+      battle, ending the threat to their forces. Having achieved her "revenge" against the Canavar, Zara joins Lawrence to 
+      strike at targets in the Suez Canal. The closing subtitles indicate that although the Ottomans lost the war, the Allies 
+      refused to grant the Arabs full autonomy and that conflicts in the region continue into the 21st century.
+    </p>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-dark-grey">
+  <div class="w3-row-padding">
+    <h3 class="w3-center">BATTLEFIELD 1</h3>
+    <p class="w3-center">Battlefield 1 FanPage is a website created by a Battlefield 1 fan for other Battlefield 1 fans.</p>
+    <p class="w3-center">Battlefield 1 fans can find various informations about the game, singleplayer, multiplayer modes, </p>
+    <p class="w3-center">maps, classes and weapons on this website.</p>
+  </div>
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24">Battlefield 1</div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>

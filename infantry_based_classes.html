@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Battlefield 1 Infantry-based Classes</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+</head>
+<body class="w3-black w3-text-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-dark-grey" style="z-index:3;width:250px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <h4><b>Battlefield 1 FanPage</b></h4>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-home fa-fw w3-margin-right"></i>Home</a> 
+    <h4 class="w3-bar-item w3-padding w3-text-blue">Singleplayer</h4>
+    <a href="campaigns.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>Campaigns</a> 
+    <!--<a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>-->
+    <h4 class="w3-bar-item w3-padding w3-text-blue">Multiplayer</h4>
+    <div class="w3-dropdown-hover">
+      <button class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Classes</button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="infantry_based_classes.html" onclick="w3_close()" class="w3-bar-item w3-button w3-text-teal"><i class="fa fa-user fa-fw w3-margin-right"></i>Infantry-based</a>
+          <a href="vehicle_based_classes.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-ship fa-fw w3-margin-right"></i>Vehicle-based</a>
+          <a href="elite_classes.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-empire fa-fw w3-margin-right"></i>Elite-classes</a>
+        </div>
+    </div>
+    <a href="maps.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-map fa-fw w3-margin-right"></i>Maps</a>
+    <a href="multiplayer_modes.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-group fa-fw w3-margin-right"></i>Multiplayer modes</a>
+    <div class="w3-dropdown-hover">
+      <button class="w3-bar-item w3-button w3-padding"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Weapons</button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="assault_weapons.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-arrow-right fa-fw w3-margin-right"></i>Assault Weapons</a>
+          <a href="medic_weapons.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-arrow-right fa-fw w3-margin-right"></i>Medic Weapons</a>
+          <a href="support_weapons.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-arrow-right fa-fw w3-margin-right"></i>Support Weapons</a>
+          <a href="scout_weapons.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-arrow-right fa-fw w3-margin-right"></i>Scout Weapons</a>
+        </div>
+    </div>
+    <a href="vehicles.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-truck fa-fw w3-margin-right"></i>Vehicles</a>
+    <a href="dlcs.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-puzzle-piece fa-fw w3-margin-right"></i>DLCs</a>
+    <hr>
+    <a href="report.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-flag fa-fw w3-margin-right"></i>REPORT</a>
+  </div>
+  <div class="w3-panel w3-large w3-center">
+    <a href="https://www.facebook.com/battlefield" onclick="w3_close()" class="w3-bar-item"><i class="fa fa-facebook-official fa-fw w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/battlefield/" onclick="w3_close()" class="w3-bar-item"><i class="fa fa-instagram fa-fw w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/Battlefield" onclick="w3_close()" class="w3-bar-item"><i class="fa fa-twitter fa-fw w3-hover-opacity"></i></a>
+    <a href="https://www.youtube.com/Battlefield" onclick="w3_close()" class="w3-bar-item"><i class="fa fa-youtube fa-fw w3-hover-opacity"></i></a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Header -->
+  <header id="battlefield">
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    </div>
+  </header>
+  
+  <!-- Battlefield 1 Introduction -->
+  <div class="w3-display-container">
+    <img src="images/page_images/battlefield1_infantry_based.jpg" style="height: 100%; width:100%;">
+    <div class="w3-display-middle w3-xxxlarge w3-text-white">Infantry-based classes</div>
+  </div>
+
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+    <p>Battlefield 1's multiplayer features four main classes:
+    </p>
+    <p>
+    <ul>
+        <li><a href="#Assault"><b>Assault</b></a> – The primary anti-vehicle/CQB class. Assault players have 
+            submachine guns, machine pistols, and shotguns at their disposal. They contribute using explosives such 
+            as dynamite or anti-tank grenades to destroy vehicles such as tanks and armored vehicles.
+        </li>
+        <li><a href="#Medic"><b>Medic</b></a> – The Medic class is primarily focused on 
+             reviving teammates and healing them. The primary weapons in this class area are semi-automatic rifles, 
+             and some fully automatic rifles.
+        </li>
+        <li><a href="#Support"><b>Support</b></a> – Support troops have access to light-machine guns and 
+            semi-automatic carbines. In addition they have access to smaller explosive devices, such as mortars, 
+            limpet charges and crossbows which launch grenades. They also contribute to the team by replenishing their 
+             teammates' ammo and repairing stationary weapons and vehicles.
+        </li>
+        <li><a href="#Scout"><b>Scout</b></a> – Scouts use a variety of lever-action and bolt-action service rifles. 
+             The class contributes to the team by spotting enemies either by firing a flare gun, which spots nearby 
+             enemies in the vicinity of the flare on the mini-map, or using a periscope. 
+        </li>
+    </ul>
+    </p>
+    <hr>
+    
+    <h4 id="Assault"><b><i><u>Assault</u></i></b></h4>
+    <h6><p>The Assault makes an appearance in Battlefield 1.</p>
+      <p>Unlike other appearances, the Assault kit is geared for anti-tank and close-quarters combat. 
+        The Assault kit has submachine guns or shotguns as their primary weapon, along with an array of explosives.
+      </p>      
+      <p>If allowed to close the distance with an enemy vehicle, the Assault kit can inflict overwhelming damage 
+        with their anti-tank explosive gadgets, including Anti-Tank Grenade, Anti-Tank Mine, Dynamite, AT and AA 
+        Rocket Gun. Their close-range arsenal also allow them to defeat any occupants that may challenge him on foot.
+      </p>      
+      <p>With the introduction of gas and gas masks, the Assault kit is an extremely potent force in close quarters 
+        because most of their weapons don't require aiming down sights to accurately shoot at the enemy.
+      </p>
+      <p>All of the different nations Assaults seem to be wearing some form of scarves or neck protection. 
+        The vast majority of Assaults also wear helmets.
+      </p></h6><br>
+    <div class="w3-row">
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_assault/British_Empire.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>British Empire</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_assault/Kingdom_of_Italy.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>Kingdom of Italy</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_assault/United_States.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>United States</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_assault/German_Empire.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>German Empire</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_assault/Austro-Hungarian_Empire.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>Austro-Hungarian Empire</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_assault/Ottoman_Empire.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>Ottoman Empire</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_assault/French_Republic.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>French Republic</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_assault/Russian_Empire.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>Russian Empire</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_assault/White_Army.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>White Army</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_assault/Red_Army.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>Red Army</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_assault/British_Empire_Turning_Tides.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>British Empire in Turning Tides</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_assault/Ottoman_Empire_Turning_Tides.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>Ottoman Empire in Turning Tides</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_assault/Royal_Marines.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>Royal Marines</p>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <h4 id="Medic"><b><i><u>Medic</u></i></b></h4>
+    <h6><p>The Medic makes a reappearance in Battlefield 1 as a multiplayer class.</p>
+    <p>Medics are armed with a self-loading rifle—typically a semi-automatic rifle, but with some variants 
+      allowing pseudo-automatic fire by holding the Fire button, and others being true automatic rifles—a 
+      sidearm, a melee weapon, and a hand grenade.
+    </p>
+    <p>Medic in Battlefield 1 carry over some of the improvements available to the Assault class: two gadgets 
+      for healing (the lightweight Bandage Pouch and deployable Medical Crate), the ability to locate 
+      fallen teammates for reviving with a Medical Syringe (and for those teammates to see where nearby 
+      medics are), and an optional launcher for rifle grenades.
+    </p></h6><br>
+    <div class="w3-row">
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_medic/British_Empire.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>British Empire</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_medic/Kingdom_of_Italy.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>Kingdom of Italy</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_medic/United_States.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>United States</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_medic/German_Empire.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>German Empire</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_medic/Austro-Hungarian_Empire.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>Austro-Hungarian Empire</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_medic/Ottoman_Empire.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>Ottoman Empire</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_medic/French_Republic.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>French Republic</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_medic/Russian_Empire.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>Russian Empire</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_medic/White_Army.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>White Army</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_medic/Red_Army.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>Red Army</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_medic/British_Empire_Turning_Tides.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>British Empire in Turning Tides</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_medic/Ottoman_Empire_Turning_Tides.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>Ottoman Empire in Turning Tides</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_medic/Royal_Marines.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>Royal Marines</p>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <h4 id="Support"><b><i><u>Support</u></i></b></h4>
+    <h6><p>The Support class makes an appearance in Battlefield 1.</p>
+    <p>Much like in previous titles, Support has access to light-machine guns and has a primary role 
+      of suppressing enemies and supporting teammates.
+    </p>
+    <p>The Support class has access to Ammo Pouch and Ammo Crate, with ammo pouches resupplying a fixed 
+      amount for individual soldiers on the move, and the ammo crate which replenishes more ammo over time 
+      and can supply whole groups at a time.
+    </p>
+    <p>Many of the Support's offensive gadgets provide indirect fire, much like its role in Battlefield 4, 
+      including Limpet Charge, Mortar and Crossbow Launcher. Support now carries the Repair Tool, to supplement 
+      a team vehicle, or to maintain stationary weapons.
+    </p>
+    <p>Supports can be visually distinguished by their non-standard, often bulkier headgear and large backpacks.
+    </p></h6><br>
+    <div class="w3-row">
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_support/British_Empire.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>British Empire</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_support/Kingdom_of_Italy.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>Kingdom of Italy</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_support/United_States.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>United States</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_support/German_Empire.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>German Empire</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_support/Austro-Hungarian_Empire.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>Austro-Hungarian Empire</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_support/Ottoman_Empire.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>Ottoman Empire</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_support/French_Republic.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>French Republic</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_support/Russian_Empire.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>Russian Empire</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_support/White_Army.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>White Army</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_support/Red_Army.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>Red Army</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_support/British_Empire_Turning_Tides.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>British Empire in Turning Tides</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_support/Ottoman_Empire_Turning_Tides.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>Ottoman Empire in Turning Tides</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_support/Royal_Marines.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>Royal Marines</p>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <h4 id="Scout"><b><i><u>Scout</u></i></b></h4>
+    <h6><p>The Scout makes an appearance in Battlefield 1. Sporting single-action rifles, the Scout retains 
+      responsibility for long-range engagement, while gaining some of the detection duties of the Recon kit. 
+      The Scout maintains supremacy at a distance with ammunition that has further reach and high accuracy.
+    </p>
+    <p>Scouts have access to a Flare Gun (shared with the Pilot kit) that automatically spots or blinds enemies, 
+      a Trench Periscope for marking targets, and Sniper Decoys for drawing enemy fire and revealing the attacking 
+      player. K Bullets allow scouts to engage armored targets. The Tripwire Bomb provides autonomous protection, 
+      while the Sniper Shield gives the scout portable heavy armor.
+    </p>
+    <p>Central Powers Scouts generally wear their equipment over their trench coat. Allied Scouts wear their trench 
+      coat over their shoulders, giving the appearance of a cape. Scouts generally wear light headgear such as 
+      hats instead of a helmet. Notably, the Scout of the Russian Empire/White Army is depicted as a woman, 
+      representing the actual Women's Battalions of Death of World War I.
+    </p></h6><br>
+    <div class="w3-row">
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_scout/British_Empire.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>British Empire</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_scout/Kingdom_of_Italy.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>Kingdom of Italy</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_scout/United_States.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>United States</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_scout/German_Empire.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>German Empire</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_scout/Austro-Hungarian_Empire.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>Austro-Hungarian Empire</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_scout/Ottoman_Empire.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>Ottoman Empire</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_scout/French_Republic.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>French Republic</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_scout/Russian_Empire.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>Russian Empire</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_scout/White_Army.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>White Army</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_scout/Red_Army.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>Red Army</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_scout/British_Empire_Turning_Tides.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>British Empire in Turning Tides</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_scout/Ottoman_Empire_Turning_Tides.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>Ottoman Empire in Turning Tides</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_scout/Royal_Marines.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>Royal Marines</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-dark-grey">
+  <div class="w3-row-padding">
+    <h3 class="w3-center">BATTLEFIELD 1</h3>
+    <p class="w3-center">Battlefield 1 FanPage is a website created by a Battlefield 1 fan for other Battlefield 1 fans.</p>
+    <p class="w3-center">Battlefield 1 fans can find various informations about the game, singleplayer, multiplayer modes, </p>
+    <p class="w3-center">maps, classes and weapons on this website.</p>
+  </div>
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24">Battlefield 1</div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>

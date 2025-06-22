@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Battlefield 1 Elite Classes</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+</head>
+<body class="w3-black w3-text-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-dark-grey" style="z-index:3;width:250px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <h4><b>Battlefield 1 FanPage</b></h4>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-home fa-fw w3-margin-right"></i>Home</a> 
+    <h4 class="w3-bar-item w3-padding w3-text-blue">Singleplayer</h4>
+    <a href="campaigns.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>Campaigns</a> 
+    <!--<a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>-->
+    <h4 class="w3-bar-item w3-padding w3-text-blue">Multiplayer</h4>
+    <div class="w3-dropdown-hover">
+      <button class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Classes</button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="infantry_based_classes.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-user fa-fw w3-margin-right"></i>Infantry-based</a>
+          <a href="vehicle_based_classes.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-ship fa-fw w3-margin-right"></i>Vehicle-based</a>
+          <a href="elite_classes.html" onclick="w3_close()" class="w3-bar-item w3-button w3-text-teal"><i class="fa fa-empire fa-fw w3-margin-right"></i>Elite-classes</a>
+        </div>
+    </div>
+    <a href="maps.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-map fa-fw w3-margin-right"></i>Maps</a>
+    <a href="multiplayer_modes.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-group fa-fw w3-margin-right"></i>Multiplayer modes</a>
+    <div class="w3-dropdown-hover">
+      <button class="w3-bar-item w3-button w3-padding"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Weapons</button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="assault_weapons.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-arrow-right fa-fw w3-margin-right"></i>Assault Weapons</a>
+          <a href="medic_weapons.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-arrow-right fa-fw w3-margin-right"></i>Medic Weapons</a>
+          <a href="support_weapons.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-arrow-right fa-fw w3-margin-right"></i>Support Weapons</a>
+          <a href="scout_weapons.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-arrow-right fa-fw w3-margin-right"></i>Scout Weapons</a>
+        </div>
+    </div>
+    <a href="vehicles.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-truck fa-fw w3-margin-right"></i>Vehicles</a>
+    <a href="dlcs.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-puzzle-piece fa-fw w3-margin-right"></i>DLCs</a>
+    <hr>
+    <a href="report.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-flag fa-fw w3-margin-right"></i>REPORT</a>
+  </div>
+  <div class="w3-panel w3-large w3-center">
+    <a href="https://www.facebook.com/battlefield" onclick="w3_close()" class="w3-bar-item"><i class="fa fa-facebook-official fa-fw w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/battlefield/" onclick="w3_close()" class="w3-bar-item"><i class="fa fa-instagram fa-fw w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/Battlefield" onclick="w3_close()" class="w3-bar-item"><i class="fa fa-twitter fa-fw w3-hover-opacity"></i></a>
+    <a href="https://www.youtube.com/Battlefield" onclick="w3_close()" class="w3-bar-item"><i class="fa fa-youtube fa-fw w3-hover-opacity"></i></a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Header -->
+  <header id="battlefield">
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    </div>
+  </header>
+  
+  <!-- Battlefield 1 Introduction -->
+  <div class="w3-display-container">
+    <img src="images/page_images/battlefield1_elite.jpg" style="height: 100%; width:100%;">
+    <div class="w3-display-middle w3-xxxlarge w3-text-white">Elite-classes</div>
+  </div>
+
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+    <p>
+      Battlefield 1's multiplayer features five pick-up based Elite classes:
+    </p>
+    <p>
+      <ul>
+          <li><a href="#FlameTrooperKit"><b>Flame Trooper Kit</b></a> – Players who pick up the Flame Trooper Kit automatically 
+            equip a Gas mask, a Wex flamethrower, and three Incendiary grenades. They are also equipped with a trench club.
+          </li>
+          <li><a href="#SentryKit"><b>Sentry Kit</b></a> – Players who pick up the Sentry Kit gain plate armour and a MG 08/15 
+            or Villar Perosa (depending on map), as well one Frag grenade and a trench club. The plate armour includes a 
+            helmet which prevents headshots to the player, but leaves them unable to don a gas mask.
+          </li>
+          <li><a href="#TankHunterKit"><b>Tank Hunter Kit</b></a> – Players who pick up the Tank Hunter Kit equip both a Mauser 
+            1918 T-Gewehr, capable of doing massive amounts of damage to vehicles and infantry, and a sawed-off shotgun. 
+            They also gain access to a periscope and Geballteladung anti-tank grenades. Furthermore, the player dons a 
+            respirator and goggles, granting them a permanent Gas Mask, while being able to aim down their sights without 
+            obscured vision. Their armor remains the same as that of a normal soldier.
+          </li>
+          <li><a href="#TrenchRaiderKit"><b>Trench Raider Kit</b></a> – Players who pick up the Trench Raider Kit wield a 
+            Trench Club that kills enemies in one hit, Smoke Grenades, a Medical crate, and a No. 3 Revolver, and three 
+            Frag grenades. This kit is exclusive to the They Shall Not Pass expansion.
+          </li>
+          <li><a href="#InfiltratorKit"><b>Infiltrator Kit</b></a> – Players who pick up this kit receive a Martini-Henry Grenade 
+            Launcher, a sawed-off shotgun, a spawn beacon in the form of a heliograph, and a signal flare gun that calls 
+            in artillery strikes. The player's helmet is exchanged for a scuba mask,[citation needed] allowing them to swim 
+            further underwater than the average soldier, but (as with the Sentry) unable to don a gas mask. This elite class 
+            is exclusive to the Turning Tides expansion.
+          </li>
+        </ul>
+    </p>
+    <hr>
+  
+    <h4 id="FlameTrooperKit"><b><i><u>Flame Trooper Kit</u></i></b></h4>
+    <h6><p>The Flame Trooper kit is obtained via a wooden crate found in fixed locations on certain maps, similar 
+      to Battle Pickups from Battlefield 4 and Battlefield Hardline.
+    </p>      
+    <p>The kit is focused on attacking enemy infantry and fortified positions through the use of one of the most 
+      notorious weapons of the conflict - the Wex infantry-portable flamethrower. The user is also equipped with 
+      3 incendiary grenades, and most importantly, a fire-retardant suit and a permanently equipped gas mask, which 
+      completely protects from incendiary and gas granades, significantly reduces damage from explosives and offers 
+      sentry-like armor all around the body, reducing received gunfire damage by around 83%, at expense of limiting 
+      the wearer's mobility and vision.
+    </p>      
+    <p>The primary weapon, while deadly at close range, leaves the operator vulnerable to attack from afar. It can 
+      also kill the user if it is activated too close to a wall or fired at the user's feet. Players are also 
+      vulnerable to takedowns from behind, a successful bayonet charge, and other situations that would normally cause 
+      death, such as roadkills and falls.
+    </p>
+    <p>In the maps that don't have the Behemoth will offer a selection of elite kits—including the Flame Trooper kit—instead.
+    </p></h6><br>
+    <div class="w3-container w3-center">
+      <img src="images/models_elite/Flametrooper.webp" style="width:50%">
+    </div>
+    <hr>
+
+    <h4 id="SentryKit"><b><i><u>Sentry Kit</u></i></b></h4>
+    <h6><p>The Sentry kit is a Elite Kit available in certain multiplayer maps.</p>
+    <p>The kit is obtained via a wooden crate found in fixed locations on certain maps, similar to Battle 
+      Pickups from Battlefield 4 and Battlefield Hardline.
+    </p>
+    <p>The primary weapon is either the MG 08/15, a belt-fed, water-cooled machine gun that is capable of 
+      sustained fire, allowing the user to effectively kill or suppress any infantry caught in their path, or 
+      the Villar Perosa, a twin-SMG arrangement with a low magazine size, compensating through an incredibly 
+      high 1800 rounds per minute fire rate. Both these weapons, however, are almost ineffective to kill at long 
+      range, making it necessary for Sentries to get close to enemies to kill them.
+    </p>
+    <p>The Sentry carries the heaviest body armor of all elite classes, providing around 83% damage reduction on 
+      the torso, arms, and head, against all firearms, and complete protection from melee weapon hits, though 
+      from the front only. The armored faceplate also negates extra damage from headshots. Also, in contradiction 
+      to player model, armor does cover legs and back as well, so hits on them do standard, reduced damage. 
+      However, the Sentry is not protected against exposure damage (fire, gas, explosives), and can fall victim 
+      to a takedown or bayonet charge, unlike the campaign variant. Another tactic involves using k-bullets, as they 
+      are not subject to the armor damage reduction.
+    </p>      
+    <p>As with other elite kits, players will have to stay out of combat for 45 seconds in order for them to start 
+      regenerating health and cannot be revived. Sentries can pick up standard infantry kits but will permanently 
+      lose the elite kit until another spawns.
+    </p>
+    <p>In the maps that don't have the Behemoth will offer a selection of elite kits—including one of each Sentry type—instead.
+    </p></h6><br>
+    <div class="w3-container w3-center">
+      <img src="images/models_elite/Sentry.webp" style="width:50%">
+    </div>
+    <hr>
+
+    <h4 id="TankHunterKit"><b><i><u>Tank Hunter Kit</u></i></b></h4>
+    <h6><p>The Tank Hunter is an Elite Kit featured in Battlefield 1.</p>      
+    <p>The kit is obtained via a wooden crate found in fixed locations on certain maps, similar to Battle Pickups 
+      from Battlefield 4 and Battlefield Hardline.
+    </p>      
+    <p>As the name suggests, the kit is primarily intended to counter enemy armor and other ground vehicles. 
+      Equipped with a Tankgewehr M1918, a high-velocity, single-shot rifle, this kit is centered around anti-armor 
+      and can critically damage vehicles. The Tank Hunter also carries a Sawed-Off Shotgun, a Trench Periscope, 
+      two Anti-Tank Grenades, and a common club.
+    </p>
+    <p>The Tank Hunter carries light armor, protecting the user from around 65% of small arms fire damage 
+      (around half protection as that of the Sentry). The Tank Hunter also wears a set of respirator and goggles, 
+      permanently giving him the effects of wearing a Gas Mask without obstructed peripheral vision and not 
+      restricting the ability to aim down sights.
+    </p></h6><br>
+    <div class="w3-container w3-center">
+      <img src="images/models_elite/TankHunter.webp" style="width:50%">
+    </div>
+    <hr>
+
+    <h4 id="TrenchRaiderKit"><b><i><u>Trench Raider Kit</u></i></b></h4>
+    <h6><p>The Trench Raider is an Elite Kit featured in Battlefield 1, introduced in the Battlefield 1: 
+      They Shall Not Pass expansion. It is available to in Nivelle Nights next to a gravestone and hut in 
+      the centre of the map and under point C in Verdun Heights. The Trench Raider's Raider Club can 
+      instantly kill an enemy within striking distance without a long killing animation, allowing for 
+      fast and brutal gameplay. Coupled with a faster movement speed and higher durability than most, the 
+      Trench Raider also carries a replenishing Medical Crate for healing, replenishing smoke grenades, as 
+      well as a No. 3 Revolver and 3 frag grenades as backup weapons.
+    </p>
+    <p>The Trench Raider is equipped with body armor that provides around 83% damage protection against firearms and front 
+      melee weapon hits. The level of protection is that of the Sentry, as with all other elite classes except the 
+      Tank Hunter . The Trench Raider is still vulnerable to fire, explosives, bayonet charge and melee takedowns, 
+      but can use his gas mask unlike the Sentry.
+    </p>
+    <p>The Raider Club is able to kill in one hit without a takedown animation. This makes it possible to have the No. 
+      3 Revolver in hand and still chain melee kills together, making the Trench Raider more flexible in long distance engagements.
+    </p>      
+    <p>The Trench Raider also has a permanent speed boost, an ability that makes him around 10% faster than regular 
+      infantry soldiers. This allows him to easily catch up with retreating enemies or evacuate quickly 
+      when a situation is beyond his power.
+    </p>
+    <p>The Trench Raider makes a very distinct grunting noise whenever he attacks, even when firing the revolver.
+    </p>
+    <p>One disadvantage to the trench club, is that you cannot use it against the sentry, and it does little to no damage.
+    </p></h6><br>
+    <div class="w3-container w3-center">
+      <img src="images/models_elite/TrenchRaider.webp" style="width:50%">
+    </div>
+    <hr>
+
+    <h4 id="InfiltratorKit"><b><i><u>Infiltrator Kit</u></i></b></h4>
+    <h6><p>The Infiltrator is an Elite Kit featured in Battlefield 1 in the Battlefield 1: Turning Tides expansion. 
+      It provides the team with explosive power and increased mobility.
+    </p>      
+    <p>The kit is provided with a unique weapon—the Martini-Henry Grenade Launcher—and two unique gadgets. 
+      The Signal Flare allows the Infiltrator to call down a powerful artillery strike, and the Heliograph 
+      temporarily provides teammates with an independent spawn point. The Sawed-Off Shotgun serves as the kit 
+      sidearm. Other carried equipment include Smoke Grenades and light armor. The Infiltrator has 
+      improved spotting and movement speed.
+    </p>
+    <p>Despite carrying some powerful weapons, the Infiltrator can be overwhelmed by 
+      multiple assailants, and can easily injure himself.
+    </p></h6><br>
+    <div class="w3-container w3-center">
+      <img src="images/models_elite/Infiltrator.webp" style="width:50%">
+    </div>
+    <hr>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-dark-grey">
+  <div class="w3-row-padding">
+    <h3 class="w3-center">BATTLEFIELD 1</h3>
+    <p class="w3-center">Battlefield 1 FanPage is a website created by a Battlefield 1 fan for other Battlefield 1 fans.</p>
+    <p class="w3-center">Battlefield 1 fans can find various informations about the game, singleplayer, multiplayer modes, </p>
+    <p class="w3-center">maps, classes and weapons on this website.</p>
+  </div>
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24">Battlefield 1</div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>

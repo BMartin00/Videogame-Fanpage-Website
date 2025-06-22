@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Battlefield 1 Vehicle-based Classes</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+</head>
+<body class="w3-black w3-text-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-dark-grey" style="z-index:3;width:250px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <h4><b>Battlefield 1 FanPage</b></h4>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-home fa-fw w3-margin-right"></i>Home</a> 
+    <h4 class="w3-bar-item w3-padding w3-text-blue">Singleplayer</h4>
+    <a href="campaigns.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>Campaigns</a> 
+    <!--<a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>-->
+    <h4 class="w3-bar-item w3-padding w3-text-blue">Multiplayer</h4>
+    <div class="w3-dropdown-hover">
+      <button class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Classes</button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="infantry_based_classes.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-user fa-fw w3-margin-right"></i>Infantry-based</a>
+          <a href="vehicle_based_classes.html" onclick="w3_close()" class="w3-bar-item w3-button w3-text-teal"><i class="fa fa-ship fa-fw w3-margin-right"></i>Vehicle-based</a>
+          <a href="elite_classes.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-empire fa-fw w3-margin-right"></i>Elite-classes</a>
+        </div>
+    </div>
+    <a href="maps.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-map fa-fw w3-margin-right"></i>Maps</a>
+    <a href="multiplayer_modes.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-group fa-fw w3-margin-right"></i>Multiplayer modes</a>
+    <div class="w3-dropdown-hover">
+      <button class="w3-bar-item w3-button w3-padding"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Weapons</button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="assault_weapons.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-arrow-right fa-fw w3-margin-right"></i>Assault Weapons</a>
+          <a href="medic_weapons.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-arrow-right fa-fw w3-margin-right"></i>Medic Weapons</a>
+          <a href="support_weapons.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-arrow-right fa-fw w3-margin-right"></i>Support Weapons</a>
+          <a href="scout_weapons.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-arrow-right fa-fw w3-margin-right"></i>Scout Weapons</a>
+        </div>
+    </div>
+    <a href="vehicles.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-truck fa-fw w3-margin-right"></i>Vehicles</a>
+    <a href="dlcs.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-puzzle-piece fa-fw w3-margin-right"></i>DLCs</a>
+    <hr>
+    <a href="report.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-flag fa-fw w3-margin-right"></i>REPORT</a>
+  </div>
+  <div class="w3-panel w3-large w3-center">
+    <a href="https://www.facebook.com/battlefield" onclick="w3_close()" class="w3-bar-item"><i class="fa fa-facebook-official fa-fw w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/battlefield/" onclick="w3_close()" class="w3-bar-item"><i class="fa fa-instagram fa-fw w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/Battlefield" onclick="w3_close()" class="w3-bar-item"><i class="fa fa-twitter fa-fw w3-hover-opacity"></i></a>
+    <a href="https://www.youtube.com/Battlefield" onclick="w3_close()" class="w3-bar-item"><i class="fa fa-youtube fa-fw w3-hover-opacity"></i></a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Header -->
+  <header id="battlefield">
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    </div>
+  </header>
+  
+  <!-- Battlefield 1 Introduction -->
+  <div class="w3-display-container">
+    <img src="images/page_images/battlefield1_vehicle_based.jpg" style="height: 100%; width:100%;">
+    <div class="w3-display-middle w3-xxxlarge w3-text-white">Vehicle-based classes</div>
+  </div>
+
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+    <p>
+      Battlefield 1's multiplayer features three spawn-based vehicle classes:
+    </p>
+    <p>
+      <ul>
+          <li><a href="#Tanker"><b>Tanker</b></a> – Players choosing to spawn into a tank automatically spawn as the 
+            tanker class. The class is new to the series, and features a hammer wrench that can repair allied 
+            vehicles and damage enemy vehicles.
+          </li>
+          <li><a href="#Pilot"><b>Pilot</b></a> – Players who spawn into a plane automatically spawn as the pilot 
+            class. Outside of tanks and planes, tankers and pilots have access to pistol carbines and a sawed-off shotgun.
+          </li>
+          <li><a href="#Cavalry"><b>Cavalry</b></a> – Players who choose to spawn on a horse spawn as the cavalry class. 
+            The cavalry class is equipped with a cuirass granting them extra defense, a Russian 1895 cavalry rifle, 
+            a cavalry saber or a cavalry lance as well as the ability to replenish health and ammo to both themselves, 
+            their horse and their teammates through the use of medical packs and ammunition packs.
+          </li>
+        </ul>
+    </p>
+    <hr>
+  
+    <h4 id="Tanker"><b><i><u>Tanker</u></i></b></h4>
+      <h6><p>The Tanker is a kit appearing in Battlefield 1. The player gains this role by spawning in a tank, artillery truck, 
+      or L-Class Destroyer (in this case they represent the ship's captain), and continues using this kit upon exiting 
+      said vehicle. The kit is geared towards vehicle maintenance, rather than as an infantryman seen in other classes.
+      </p>      
+      <p>Like the Pilot class, they are issued with pistol carbines as their primary and an additional handgun as a secondary 
+        weapon. Tankers carry a Repair Tool which allows them to maintain their vehicle, inside and out. They can throw 
+        an Anti-Tank Grenade as a last-ditch weapon against enemy vehicles that may have beaten them. A survival knife, a 
+        frag grenade, and gas mask are their remaining resources until they can procure another vehicle or kit.
+      </p>      
+      <p>An important note is that the Tanker kit is unavailable in the main menu screen's Class Customization, and 
+        purchasing weapons or editing the loadout can only be done during a match while a ground vehicle is available for spawn.
+      </p></h6><br>
+    <div class="w3-row">
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_tanker/British_Empire.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>British Empire</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_tanker/Kingdom_of_Italy.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>Kingdom of Italy</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_tanker/United_States.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>United States</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_tanker/German_Empire.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>German Empire</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_tanker/Austro-Hungarian_Empire.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>Austro-Hungarian Empire</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_tanker/Ottoman_Empire.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>Ottoman Empire</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_tanker/French_Republic.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>French Republic</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_tanker/Russian_Empire.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>Russian Empire</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_tanker/White_Army.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>White Army</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_tanker/Red_Army.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>Red Army</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_tanker/British_Empire_Turning_Tides.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>British Empire in Turning Tides</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_tanker/Royal_Marines.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>Royal Marines</p>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <h4 id="Pilot"><b><i><u>Pilot</u></i></b></h4>
+    <h6><p>Battlefield 1 introduces a distinct Pilot class for air vehicles. Players spawning into the pilot 
+      seat of aircraft will be issued the kit, continuing to use it once they exit said vehicle.
+    </p>
+    <p>Along with the Tanker class, the pilot's primary weapon is considered to be their vehicle, but carry 
+      a pistol carbines and handgun for self-defense. The rest of their kit consists of a repair tool to maintain 
+      their aircraft, a spotting flare to signal distress (and spot enemies), a Frag Grenade, a gas mask, and a survival knife.
+    </p>
+    <p>While flying their aircraft, pilots can repair some damage, an ability reminiscent of Battlefield Heroes. Lone pilots 
+      flying multi-seat aircraft can also switch between the seats. But unlike previous titles, the pilot is vulnerable for 
+      a few seconds as he maneuvers from seat to seat.
+    </p>
+    <p>An important note is that the Pilot kit is unavailable in the main menu screen's Class Customization, and purchasing 
+      weapons or editing the loadout can only be done during a match.
+    </p></h6><br>
+    <div class="w3-row">
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_pilot/British_Empire.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>British Empire</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_pilot/Kingdom_of_Italy.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>Kingdom of Italy</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_pilot/United_States.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>United States</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_pilot/German_Empire.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>German Empire</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_pilot/Austro-Hungarian_Empire.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>Austro-Hungarian Empire</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_pilot/Ottoman_Empire.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>Ottoman Empire</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_pilot/French_Republic.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>French Republic</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_pilot/Russian_Empire.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>Russian Empire</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_pilot/British_Empire_Turning_Tides.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>British Empire in Turning Tides</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_pilot/Ottoman_Empire_Turning_Tides.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>Ottoman Empire in Turning Tides</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_pilot/Royal_Marines.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>Royal Marines</p>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <h4 id="Cavalry"><b><i><u>Cavalry</u></i></b></h4>
+    <h6><p>The Cavalry kit is introduced alongside horses in Battlefield 1. Players receive this kit and its unique 
+      appearance when spawning on a horse. Cavalry wear light, distinctive headgear (such as peaked caps, pickelhauben 
+      or keffiyeh), a modified Sappenpanzer cuirass, harnesses for carrying equipment, riding coat and pants, and long boots.
+    </p>
+    <p>Dismounted Cavalry use a limited version of the kit carried by their horse, with a separate stash of ammunition for 
+      their primary weapon, the Russian 1895 Cavalry. A handgun replaces the Cavalry Sword as sidearm, which in turn is 
+      used as a melee weapon.[2] Cavalry also carry Bandage and Ammo Pouch to support themselves and teammates, and 
+      Light Anti-Tank Grenades.
+    </p>
+    <p>Cavalry have some protection against small arms due to their cuirass. The armor may also extend to the user's head, 
+      protecting them from headshots despite their unsuitable headwear. The armor is only effective while the Cavalry player 
+      is mounted on their horse, and it is nonexistent when dismounted.
+    </p>
+    <p>Dogtags available for using the Cavalry class are generally awarded for actions on horseback, as is the Order of the Khan medal.
+    </p></h6><br>
+    <div class="w3-row">
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_cavalry/British_Empire.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>British Empire</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_cavalry/Kingdom_of_Italy.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>Kingdom of Italy</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_cavalry/United_States.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>United States</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_cavalry/German_Empire.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>German Empire</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_cavalry/Austro-Hungarian_Empire.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>Austro-Hungarian Empire</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_cavalry/Ottoman_Empire.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>Ottoman Empire</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_cavalry/French_Republic.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>French Republic</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_cavalry/Russian_Empire.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>Russian Empire</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_cavalry/White_Army.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>White Army</p>
+        </div>
+      </div>
+      <div class="w3-third w3-card-4 w3-padding">
+        <img src="images/models_cavalry/Red_Army.webp" style="height: 100%; width:100%;">
+        <div class="w3-container w3-center w3-grey">
+          <p>Red Army</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-dark-grey">
+  <div class="w3-row-padding">
+    <h3 class="w3-center">BATTLEFIELD 1</h3>
+    <p class="w3-center">Battlefield 1 FanPage is a website created by a Battlefield 1 fan for other Battlefield 1 fans.</p>
+    <p class="w3-center">Battlefield 1 fans can find various informations about the game, singleplayer, multiplayer modes, </p>
+    <p class="w3-center">maps, classes and weapons on this website.</p>
+  </div>
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24">Battlefield 1</div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>

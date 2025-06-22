@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Battlefield 1 Multiplayer Modes</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+</head>
+<body class="w3-black w3-text-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-dark-grey" style="z-index:3;width:250px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <h4><b>Battlefield 1 FanPage</b></h4>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-home fa-fw w3-margin-right"></i>Home</a> 
+    <h4 class="w3-bar-item w3-padding w3-text-blue">Singleplayer</h4>
+    <a href="campaigns.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>Campaigns</a> 
+    <!--<a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>-->
+    <h4 class="w3-bar-item w3-padding w3-text-blue">Multiplayer</h4>
+    <div class="w3-dropdown-hover">
+      <button class="w3-bar-item w3-button w3-padding"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Classes</button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="infantry_based_classes.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-user fa-fw w3-margin-right"></i>Infantry-based</a>
+          <a href="vehicle_based_classes.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-ship fa-fw w3-margin-right"></i>Vehicle-based</a>
+          <a href="elite_classes.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-empire fa-fw w3-margin-right"></i>Elite-classes</a>
+        </div>
+    </div>
+    <a href="maps.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-map fa-fw w3-margin-right"></i>Maps</a>
+    <a href="multiplayer_modes.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-group fa-fw w3-margin-right"></i>Multiplayer modes</a>
+    <div class="w3-dropdown-hover">
+      <button class="w3-bar-item w3-button w3-padding"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Weapons</button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="assault_weapons.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-arrow-right fa-fw w3-margin-right"></i>Assault Weapons</a>
+          <a href="medic_weapons.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-arrow-right fa-fw w3-margin-right"></i>Medic Weapons</a>
+          <a href="support_weapons.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-arrow-right fa-fw w3-margin-right"></i>Support Weapons</a>
+          <a href="scout_weapons.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-arrow-right fa-fw w3-margin-right"></i>Scout Weapons</a>
+        </div>
+    </div>
+    <a href="vehicles.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-truck fa-fw w3-margin-right"></i>Vehicles</a>
+    <a href="dlcs.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-puzzle-piece fa-fw w3-margin-right"></i>DLCs</a>
+    <hr>
+    <a href="report.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-flag fa-fw w3-margin-right"></i>REPORT</a>
+  </div>
+  <div class="w3-panel w3-large w3-center">
+    <a href="https://www.facebook.com/battlefield" onclick="w3_close()" class="w3-bar-item"><i class="fa fa-facebook-official fa-fw w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/battlefield/" onclick="w3_close()" class="w3-bar-item"><i class="fa fa-instagram fa-fw w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/Battlefield" onclick="w3_close()" class="w3-bar-item"><i class="fa fa-twitter fa-fw w3-hover-opacity"></i></a>
+    <a href="https://www.youtube.com/Battlefield" onclick="w3_close()" class="w3-bar-item"><i class="fa fa-youtube fa-fw w3-hover-opacity"></i></a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+    <!-- Header -->
+    <header id="battlefield">
+        <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+        <div class="w3-container">
+        </div>
+    </header>
+  
+    <!-- Battlefield 1 DLCs -->
+    <div class="w3-display-container">
+        <img src="images/page_images/battlefield1_multiplayer_modes.jpg" style="height: 100%; width:100%;">
+        <div class="w3-display-middle w3-xxxlarge w3-text-white">Multiplayer Modes</div>
+    </div>
+  
+    <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+        <p>Battlefield 1's multiplayer mode features numerous game types seen in previous entries in the franchise, as well as new modes;
+        </p>
+        <h4><b><i><u>Conquest</u></i></b></h4>
+        <h6><p>Conquest: one of the standard game modes in the Battlefield series. Teams capture objectives across the 
+            map, earning points based on the number of objectives they hold. If a team is suffering from a major point 
+            deficit, a Behemoth-class vehicle (such as a Zeppelin L 30, an armoured train, a Dreadnought, or a Char 2C) 
+            becomes available for their use.
+        </p></h6><hr>
+
+        <h4><b><i><u>Domination</u></i></b></h4>
+        <h6><p>Domination: a version of Conquest with a smaller map and fewer control points.
+        </p></h6><hr>
+
+        <h4><b><i><u>Rush</u></i></b></h4>
+        <h6><p>Rush: another standard game mode in the series, played between a defending and attacking team. An 
+            attacking team with a limited number of respawns must attempt to plant bombs in two telegraph stations 
+            located within a sector of the map, while the defending team must protect the stations and defuse 
+            planted bombs before they explode. If the attackers are successful, their respawns are replenished and 
+            the defending team falls back to the next sector. The game ends if the defending team exhausts the 
+            attackers' respawn tickets, or the attacking team captures the final telegraph stations. Unlike Rush 
+            modes in previous Battlefield games, the telegraph stations can also be used to call for artillery 
+            fire against the attackers.
+        </p></h6><hr>
+
+        <h4><b><i><u>Operations</u></i></b></h4>
+        <h6><p>Operations: A new mode which takes place across multiple maps to simulate a campaign 
+            from the war. An attacking team controls a battalion with limited respawn tickets; similarly to 
+            Rush, they must progress across sectors of a map by capturing their control points. If the attacking 
+            team exhausts their tickets, they lose one of their three battalions, and must try again. If the attackers
+            are successful, the teams move onto a different map. The attacking team wins if they successfully clear 
+            all maps without running out of battalions, while the defenders win if they eliminate all three of their 
+            opponents' battalions. The attacking team can be granted a Behemoth vehicle if they lose a battalion. 
+            Conversely, if the defending team is losing too rapidly, they will be granted a behemoth to even the odds.
+        </p></h6><hr>
+
+        <h4><b><i><u>Team Deathmatch</u></i></b></h4>
+        <h6><p>Team Deathmatch: a standard game in which teams compete to reach a target number of kills, or the 
+            highest number of kills before time expires.
+        </p></h6><hr>
+
+        <h4><b><i><u>War Pigeons</u></i></b></h4>
+        <h6><p>War Pigeons: a new, capture the flag-like mode in which two teams must attempt to capture a messenger 
+            pigeon used to signal artillery fire. After the pigeon is captured, the player must be defended 
+            while they prepare the message to be sent, and the pigeon must be released outside. However, the 
+            opposing team can still shoot down the pigeon. The first team to successfully release 3 pigeons wins the game.
+        </p></h6><hr>
+
+        <h4><b><i><u>Frontlines</u></i></b></h4>
+        <h6><p>Frontlines: A new mode added in the They Shall Not Pass DLC, described as a "tug of war" combining aspects 
+            of Operations and Rush. A map contains five control points along a linear path connecting the bases of 
+            the two teams. Beginning at the centre of the map, a team must progress towards their opponents' base 
+            by capturing each successive control point. If the point is captured by the opposing team instead, they 
+            are pushed back towards their own territory. If a team reaches their opponent's base, they must then destroy 
+            the two telegraph stations within to win the game. As in Rush, the defending team can use the telegraph 
+            stations to call for artillery fire. If the attacking team does not destroy both stations before they run 
+            out of tickets, they are pushed out and must capture the final objective again before they can make another attempt.
+        </p></h6><hr>
+
+        <h4><b><i><u>Supply Drop</u></i></b></h4>
+        <h6><p>Supply Drop: A new mode added in the In the Name of the Tsar DLC. This game mode is inspired by the 
+            huge areas the Eastern Front of World War 1 took place on. Teams fight over these supply drops, which 
+            give the capturing team all sorts of goodies – ammo, health, vehicles, and pickups for Elite classes. 
+            The team that then captures more points, wins. Ammo and health is more commonly found in supply drops, 
+            but vehicles and Elite class pickups are made to turn the tide of battle in the attacking team's favour.
+        </p></h6><hr>
+
+        <h4><b><i><u>Air Assault</u></i></b></h4>
+        <h6><p>The newest multiplayer game mode, added as part of the Apocalypse DLC. This game mode, only available 
+            on two maps, features "frantic dogfights" and centers on aerial combat. Each opposing vehicle destroyed 
+            gains your team points. On the map "Razor's Edge," only single-seat planes are available, while in 
+            "London Calling" a wide variety of planes - and a zeppelin - are at each team's disposal.
+        </p></h6><hr>
+
+        <h4><b><i><u>Shock Operations</u></i></b></h4>
+        <h6><p>Shock Operations: A new mode added in the 2018 June Patch. Shock Operations are like Operations but 
+            instead these are shorter, faster with 40 players per server unlike normal 64 players per server and 
+            only play on one map. There are only five available maps in this game mode. These maps are called Giant's 
+            Shadow, Prise de Tahure, Lupkow Pass, Zeebrugge and River Somme.
+        </p></h6><hr>
+    </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-dark-grey">
+  <div class="w3-row-padding">
+    <h3 class="w3-center">BATTLEFIELD 1</h3>
+    <p class="w3-center">Battlefield 1 FanPage is a website created by a Battlefield 1 fan for other Battlefield 1 fans.</p>
+    <p class="w3-center">Battlefield 1 fans can find various informations about the game, singleplayer, multiplayer modes, </p>
+    <p class="w3-center">maps, classes and weapons on this website.</p>
+  </div>
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24">Battlefield 1</div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>

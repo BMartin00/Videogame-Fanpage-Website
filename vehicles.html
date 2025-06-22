@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Battlefield 1 Vehicles</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+</head>
+<body class="w3-black w3-text-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-dark-grey" style="z-index:3;width:250px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <h4><b>Battlefield 1 FanPage</b></h4>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-home fa-fw w3-margin-right"></i>Home</a> 
+    <h4 class="w3-bar-item w3-padding w3-text-blue">Singleplayer</h4>
+    <a href="campaigns.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>Campaigns</a> 
+    <!--<a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>-->
+    <h4 class="w3-bar-item w3-padding w3-text-blue">Multiplayer</h4>
+    <div class="w3-dropdown-hover">
+      <button class="w3-bar-item w3-button w3-padding"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Classes</button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="infantry_based_classes.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-user fa-fw w3-margin-right"></i>Infantry-based</a>
+          <a href="vehicle_based_classes.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-ship fa-fw w3-margin-right"></i>Vehicle-based</a>
+          <a href="elite_classes.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-empire fa-fw w3-margin-right"></i>Elite-classes</a>
+        </div>
+    </div>
+    <a href="maps.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-map fa-fw w3-margin-right"></i>Maps</a>
+    <a href="multiplayer_modes.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-group fa-fw w3-margin-right"></i>Multiplayer modes</a>
+    <!-- <a href="weapons.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-wrench fa-fw w3-margin-right"></i>Weapons</a> -->
+    <div class="w3-dropdown-hover">
+        <button class="w3-bar-item w3-button w3-padding"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Weapons</button>
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="assault_weapons.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-arrow-right fa-fw w3-margin-right"></i>Assault Weapons</a>
+            <a href="medic_weapons.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-arrow-right fa-fw w3-margin-right"></i>Medic Weapons</a>
+            <a href="support_weapons.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-arrow-right fa-fw w3-margin-right"></i>Support Weapons</a>
+            <a href="scout_weapons.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-arrow-right fa-fw w3-margin-right"></i>Scout Weapons</a>
+          </div>
+    </div>
+    <a href="vehicles.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-truck fa-fw w3-margin-right"></i>Vehicles</a>
+    <a href="dlcs.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-puzzle-piece fa-fw w3-margin-right"></i>DLCs</a>
+    <hr>
+    <a href="report.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-flag fa-fw w3-margin-right"></i>REPORT</a>
+  </div>
+  <div class="w3-panel w3-large w3-center">
+    <a href="https://www.facebook.com/battlefield" onclick="w3_close()" class="w3-bar-item"><i class="fa fa-facebook-official fa-fw w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/battlefield/" onclick="w3_close()" class="w3-bar-item"><i class="fa fa-instagram fa-fw w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/Battlefield" onclick="w3_close()" class="w3-bar-item"><i class="fa fa-twitter fa-fw w3-hover-opacity"></i></a>
+    <a href="https://www.youtube.com/Battlefield" onclick="w3_close()" class="w3-bar-item"><i class="fa fa-youtube fa-fw w3-hover-opacity"></i></a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+    <!-- Header -->
+    <header id="battlefield">
+        <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+        <div class="w3-container">
+        </div>
+    </header>
+  
+    <!-- Battlefield 1 Vehicles -->
+    <div class="w3-display-container">
+        <img src="images/page_images/battlefield1_vehicles.jpg" style="height: 100%; width:100%;">
+        <div class="w3-display-middle w3-xxxlarge w3-text-white">Vehicles</div>
+    </div>
+    <hr>
+
+    <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+    <!-- Armor Vehicles -->
+    <h2>Armor Vehicles</h2>
+        <div class="w3-row">
+            <div class="w3-half w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/vehicles/armor/ft_17.webp" style="width: 100%; height: 300px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>FT-17</b></h5>
+                </div>
+            </div>
+            <div class="w3-half w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/vehicles/armor/a7v.webp" style="width: 100%; height: 300px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>A7V</b></h5>
+                </div>
+            </div>
+            <div class="w3-half w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/vehicles/armor/Mark_V_Landship.webp" style="width: 100%; height: 300px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Mark V Landship</b></h5>
+                </div>
+            </div>
+            <div class="w3-half w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/vehicles/armor/Artillery_Truck.webp" style="width: 100%; height: 300px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Artillery Truck</b></h5>
+                </div>
+            </div>
+            <div class="w3-half w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/vehicles/armor/St_Chamond.webp" style="width: 100%; height: 300px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>St Chamond</b></h5>
+                </div>
+            </div>
+            <div class="w3-half w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/vehicles/armor/putilov_garford.webp" style="width: 100%; height: 300px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Putilov Garford</b></h5>
+                </div>
+            </div>
+        </div><hr>
+    <!-- Light Vehicles -->
+    <h2>Light Vehicles</h2>
+        <div class="w3-row">
+            <div class="w3-half w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/vehicles/light_vehicles/RNAS_Armored_Car.webp" style="width: 100%; height: 300px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>RNAS Armored Car</b></h5>
+                </div>
+            </div>
+            <div class="w3-half w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/vehicles/light_vehicles/EV4_Armored_Car.webp" style="width: 100%; height: 300px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>EV4 Armored Car</b></h5>
+                </div>
+            </div>
+            <div class="w3-half w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/vehicles/light_vehicles/F.T_Armored_Car.webp" style="width: 100%; height: 300px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>F.T Armored Car</b></h5>
+                </div>
+            </div>
+            <div class="w3-half w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/vehicles/light_vehicles/Romfell_Armored_Car.webp" style="width: 100%; height: 300px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Romfell Armored Car</b></h5>
+                </div>
+            </div>
+            <div class="w3-half w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/vehicles/light_vehicles/KFT_Scout.webp" style="width: 100%; height: 300px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>KFT Scout</b></h5>
+                </div>
+            </div>
+            <div class="w3-half w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/vehicles/light_vehicles/M30_Scout.webp" style="width: 100%; height: 300px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>M30 Scout</b></h5>
+                </div>
+            </div>
+            <div class="w3-half w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/vehicles/light_vehicles/37-95_Scout.webp" style="width: 100%; height: 300px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>37/95 Scout</b></h5>
+                </div>
+            </div>
+            <div class="w3-half w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/vehicles/light_vehicles/MC_3.5HP_Sidecar.webp" style="width: 100%; height: 300px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>MC 3.5HP Sidecar</b></h5>
+                </div>
+            </div>
+            <div class="w3-half w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/vehicles/light_vehicles/MC_18J.webp" style="width: 100%; height: 300px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>MC 18J Sidecar</b></h5>
+                </div>
+            </div>
+        </div><hr>
+    <!-- Attack Planes -->
+    <h2>Attack Planes</h2>
+        <div class="w3-row">
+            <div class="w3-half w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/vehicles/attack_planes/Bristol_F2.B.webp" style="width: 100%; height: 300px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Bristol F2.B</b></h5>
+                </div>
+            </div>
+            <div class="w3-half w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/vehicles/attack_planes/Halberstadt_CL.II.webp" style="width: 100%; height: 300px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Halberstadt CL.II</b></h5>
+                </div>
+            </div>
+            <div class="w3-half w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/vehicles/attack_planes/Rumpler_CI.webp" style="width: 100%; height: 300px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Rumpler C.I</b></h5>
+                </div>
+            </div>
+            <div class="w3-half w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/vehicles/attack_planes/Salmson_2.webp" style="width: 100%; height: 300px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>A.E.F 2-A2</b></h5>
+                </div>
+            </div>
+        </div><hr>
+    <!-- Bombers -->
+    <h2>Bombers</h2>
+        <div class="w3-row">
+            <div class="w3-half w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/vehicles/bombers/Caproni_Ca.5.webp" style="width: 100%; height: 300px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Caproni Ca.5</b></h5>
+                </div>
+            </div>
+            <div class="w3-half w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/vehicles/bombers/Gotha_G.IV.webp" style="width: 100%; height: 300px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Gotha G.IV</b></h5>
+                </div>
+            </div>
+            <div class="w3-half w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/vehicles/bombers/Ilya-Muromets.webp" style="width: 100%; height: 300px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Ilya-Muromets</b></h5>
+                </div>
+            </div>
+            <div class="w3-half w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/vehicles/bombers/Hansa-Brandenburg_GI.webp" style="width: 100%; height: 300px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Hansa-Brandenburg G.I</b></h5>
+                </div>
+            </div>
+            <div class="w3-half w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/vehicles/bombers/Airco_DH.10.webp" style="width: 100%; height: 300px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Airco DH.10</b></h5>
+                </div>
+            </div>
+        </div><hr>
+    <!-- Fighters -->
+    <h2>Fighters</h2>
+        <div class="w3-row">
+            <div class="w3-half w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/vehicles/fighters/Sopwith_Camel.webp" style="width: 100%; height: 300px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Sopwith Camel</b></h5>
+                </div>
+            </div>
+            <div class="w3-half w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/vehicles/fighters/Dr.1.webp" style="width: 100%; height: 300px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Dr.1</b></h5>
+                </div>
+            </div>
+            <div class="w3-half w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/vehicles/fighters/Albatros_D.III.webp" style="width: 100%; height: 300px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Albatros D.III</b></h5>
+                </div>
+            </div>
+            <div class="w3-half w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/vehicles/fighters/SPAD_S.XIII.webp" style="width: 100%; height: 300px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>SPAD S.XIII</b></h5>
+                </div>
+            </div>
+        </div><hr>
+    <!-- Emplacements -->
+    <h2>Emplacements</h2>
+        <div class="w3-row">
+            <div class="w3-half w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/vehicles/emplacements/FK_96.webp" style="width: 100%; height: 300px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>FK 96 n.A.</b></h5>
+                </div>
+            </div>
+            <div class="w3-half w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/vehicles/emplacements/Maxim_MG_Pintle.webp" style="width: 100%; height: 300px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Heavy Machine Gun</b></h5>
+                </div>
+            </div>
+            <div class="w3-half w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/vehicles/emplacements/QF_1_AA.webp" style="width: 100%; height: 300px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>QF 1 AA</b></h5>
+                </div>
+            </div>
+            <div class="w3-half w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/vehicles/emplacements/Fortress_Gun.webp" style="width: 100%; height: 300px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Fortress Gun</b></h5>
+                </div>
+            </div>
+            <div class="w3-half w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/vehicles/emplacements/HE_Auto-Cannon.webp" style="width: 100%; height: 300px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>HE Auto-Cannon</b></h5>
+                </div>
+            </div>
+            <div class="w3-half w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/vehicles/emplacements/BL_9.2_Siege_Gun.webp" style="width: 100%; height: 300px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>BL 9.2 Siege Gun</b></h5>
+                </div>
+            </div>
+            <div class="w3-half w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/vehicles/emplacements/305-52_O_Coastal_Gun.webp" style="width: 100%; height: 300px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>305/52 O Costal Gun</b></h5>
+                </div>
+            </div>
+            <div class="w3-half w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/vehicles/emplacements/SK45_Coastal_Cannon.webp" style="width: 100%; height: 300px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>SK45 Coastal Cannon</b></h5>
+                </div>
+            </div>
+        </div><hr>
+    <!-- Boats -->
+    <h2>Boats</h2>
+        <div class="w3-row">
+            <div class="w3-half w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/vehicles/boats/M.A.S._Torpedo_Boat.webp" style="width: 100%; height: 300px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>M.A.S Torpedo Boat</b></h5>
+                </div>
+            </div>
+            <div class="w3-half w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/vehicles/boats/Y-Lighter.webp" style="width: 100%; height: 300px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Y-Lighter</b></h5>
+                </div>
+            </div>
+        </div><hr>
+    <!-- Naval Vessels -->
+    <h2>Naval Vessels</h2>
+        <div class="w3-row">
+            <div class="w3-half w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/vehicles/naval_vessels/C-Class_Airship.webp" style="width: 100%; height: 300px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>C-Class Airship</b></h5>
+                </div>
+            </div>
+            <div class="w3-half w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/vehicles/naval_vessels/L-Class_Destroyer.webp" style="width: 100%; height: 300px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>L-Class Destroyer</b></h5>
+                </div>
+            </div>
+        </div><hr>
+    <!-- Behemoths -->
+    <h2>Behemoths</h2>
+        <div class="w3-row">
+            <div class="w3-half w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/vehicles/behemoths/Airship_L30.webp" style="width: 100%; height: 300px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Airship L30</b></h5>
+                </div>
+            </div>
+            <div class="w3-half w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/vehicles/behemoths/Armored_Train.webp" style="width: 100%; height: 300px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Armored Train</b></h5>
+                </div>
+            </div>
+            <div class="w3-half w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/vehicles/behemoths/Dreadnought.webp" style="width: 100%; height: 300px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Dreadnought</b></h5>
+                </div>
+            </div>
+            <div class="w3-half w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/vehicles/behemoths/Char_2C.webp" style="width: 100%; height: 300px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Char 2C</b></h5>
+                </div>
+            </div>
+    </div><hr>
+    <!-- Other -->
+    <h2>Other</h2>
+        <div class="w3-row">
+            <div class="w3-half w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/vehicles/other/Horse.webp" style="width: 100%; height: 300px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Horse</b></h5>
+                </div>
+            </div>
+        </div><hr>
+    <!-- Unusable Vehicles -->
+    <h2>Unusable Vehicles</h2>
+        <div class="w3-row">
+            <div class="w3-half w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/vehicles/unusable_vehicles/Morser16_gun.webp" style="width: 100%; height: 300px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Mörser 16</b></h5>
+                </div>
+            </div>
+            <div class="w3-half w3-card-4 w3-padding w3-dark-grey">
+                <img src="images/vehicles/unusable_vehicles/Type_UE_II_Submarine.webp" style="width: 100%; height: 300px;">
+                <div class="w3-container w3-center w3-grey">
+                    <h5><b>Type UE II Submarine</b></h5>
+                </div>
+            </div>
+    </div><hr>
+    </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-dark-grey">
+  <div class="w3-row-padding">
+    <h3 class="w3-center">BATTLEFIELD 1</h3>
+    <p class="w3-center">Battlefield 1 FanPage is a website created by a Battlefield 1 fan for other Battlefield 1 fans.</p>
+    <p class="w3-center">Battlefield 1 fans can find various informations about the game, singleplayer, multiplayer modes, </p>
+    <p class="w3-center">maps, classes and weapons on this website.</p>
+  </div>
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24">Battlefield 1</div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
